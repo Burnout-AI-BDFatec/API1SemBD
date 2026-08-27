@@ -1,4 +1,14 @@
 oi
 
 Gustavo Neves - Olá
+<<<<<<< HEAD
 Jonas Vieira oi
+=======
+Jonas Vieira
+luca- hello world 
+
+Hello World! - Fernando Trone
+
+Meu nome é William
+Meu nome é Davi 
+>>>>>>> 834f61e153fba9e543d0f1da2aa1a6720772ca22

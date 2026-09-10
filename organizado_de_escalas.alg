@@ -1,4 +1,4 @@
-Algoritmo "Escala_Medicos"
+Algoritmo "Escala_Medicos_V2"
 
 Var
    turno_manha_CG, turno_manha_Ped, turno_manha_Cir : real

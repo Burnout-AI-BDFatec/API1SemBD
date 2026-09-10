@@ -1,6 +1,3 @@
-
-//N√ÉO est√° completo, vou colocar as informa√ß√µes dos outros turnos ainda.
-
 Algoritmo "Escala_Medicos"
 
 Var
@@ -9,128 +6,76 @@ Var
    button : caractere
 
 Inicio
-
    turno_manha_CG <- -1
    turno_manha_Ped <- -1
    turno_manha_Cir <- -1
 
-   result_turno_manha_CG <- 0
-   result_turno_manha_Ped <- 0
-   result_turno_manha_Cir <- 0
-
-   button <- "N"
-
-   Enquanto (button <> "s") E (button <> "S") Faca
-
+   Enquanto (button <> "s") E (button <> "S") FaÁa
       Escreval()
-
-      turno_manha_CG <- -1
-
-      Enquanto (turno_manha_CG < 1) OU (turno_manha_CG > 150) OU (result_turno_manha_CG > 0) Faca
-
-         Escreval("Digite o n√∫mero de Cl√≠nicos Gerais do turno da manh√£: ")
+      Enquanto (turno_manha_CG < 0) OU (turno_manha_CG>140) OU (result_turno_manha_CG>0) FaÁa
+         Escreval("Digite o n˙mero de ClÌnicos Gerais do turno da manh„: ")
          Leia(turno_manha_CG)
-
-         result_turno_manha_CG <- turno_manha_CG - Int(turno_manha_CG)
-
-         Se (turno_manha_CG < 0) Entao
+         result_turno_manha_CG <- turno_manha_CG - int(turno_manha_CG)
+         Se(turno_manha_CG<0)Ent„o
             Escreval()
-            Escreval("N√∫mero inv√°lido! Quantidade n√£o pode ser negativa.")
+            escreval("N˙mero inv·lido! Quantidade n„o pode ser negativa")
             Escreval()
-         Senao
-            Se (turno_manha_CG > 150) Entao
+         Sen„o
+            Se (turno_manha_CG>140) Ent„o
                Escreval()
-               Escreval("N√∫mero inv√°lido! Quantidade de m√©dicos maior que o m√°ximo permitido.")
+               Escreval(" N˙mero inv·lido! Quantidade de mÈdicos maior que o m·ximo permitido")
                Escreval()
-            Senao
-               Se (result_turno_manha_CG > 0) Entao
+            Sen„o
+               Se(result_turno_manha_CG>0)Ent„o
                   Escreval()
-                  Escreval("N√∫mero inv√°lido! Quantidade de m√©dicos n√£o pode ser decimal.")
+                  Escreval(" N˙mero inv·lido! Quantidade de mÈdicos n„o pode ser decimal")
                   Escreval()
-               FimSe
-            FimSe
-         FimSe
+               Fimse
+            Fimse
+         Fimse
+      Fimenquanto
+      
+      Escreval()
+      Escreval("Digite o n˙mero de Pediatras do turno da manh„: ")
+      Leia(turno_manha_Ped)
+           //repetir condicoes logicas acima
+      
+      
+      Escreval()
+      Escreval("Digite o n˙mero de Cirurgiıes do turno da manh„: ")
+      Leia(turno_manha_Cir)
+          //repetir codicoes logicas acima
 
-      FimEnquanto
 
       Escreval()
-
-      turno_manha_Ped <- -1
-
-      Enquanto (turno_manha_Ped < 1) OU (turno_manha_Ped > 150) OU (result_turno_manha_Ped > 0) Faca
-
-         Escreval("Digite o n√∫mero de Pediatras do turno da manh√£: ")
-         Leia(turno_manha_Ped)
-
-         result_turno_manha_Ped <- turno_manha_Ped - Int(turno_manha_Ped)
-
-         Se (turno_manha_Ped < 0) Entao
-            Escreval()
-            Escreval("N√∫mero inv√°lido! Quantidade n√£o pode ser negativa.")
-            Escreval()
-         Senao
-            Se (turno_manha_Ped > 150) Entao
-               Escreval()
-               Escreval("N√∫mero inv√°lido! Quantidade de m√©dicos maior que o m√°ximo permitido.")
-               Escreval()
-            Senao
-               Se (result_turno_manha_Ped > 0) Entao
-                  Escreval()
-                  Escreval("N√∫mero inv√°lido! Quantidade de m√©dicos n√£o pode ser decimal.")
-                  Escreval()
-               FimSe
-            FimSe
-         FimSe
-
-      FimEnquanto
-
+      Escreval("Confirme os dados do turno da manh„:")
+      Escreval("ClÌnicos Gerais: ", turno_manha_CG)
+      Escreval("Pediatras: ", turno_manha_Ped)
+      Escreval("Cirurgiıes: ", turno_manha_Cir)
       Escreval()
 
-      turno_manha_Cir <- -1
-
-      Enquanto (turno_manha_Cir < 1) OU (turno_manha_Cir > 150) OU (result_turno_manha_Cir > 0) Faca
-
-         Escreval("Digite o n√∫mero de Cirurgi√µes do turno da manh√£: ")
-         Leia(turno_manha_Cir)
-
-         result_turno_manha_Cir <- turno_manha_Cir - Int(turno_manha_Cir)
-
-         Se (turno_manha_Cir < 0) Entao
-            Escreval()
-            Escreval("N√∫mero inv√°lido! Quantidade n√£o pode ser negativa.")
-            Escreval()
-         Senao
-            Se (turno_manha_Cir > 150) Entao
-               Escreval()
-               Escreval("N√∫mero inv√°lido! Quantidade de m√©dicos maior que o m√°ximo permitido.")
-               Escreval()
-            Senao
-               Se (result_turno_manha_Cir > 0) Entao
-                  Escreval()
-                  Escreval("N√∫mero inv√°lido! Quantidade de m√©dicos n√£o pode ser decimal.")
-                  Escreval()
-               FimSe
-            FimSe
-         FimSe
-
-      FimEnquanto
-
-      Escreval("Aperte s para confirmar ou n para corrigir")
+      Escreval("Digite 's' para confirmar ou 'n' para corrigir:")
       Leia(button)
+      Escreval()
+      Escreval()
+      Se (button = "n") OU (button = "N") Ent„o
+         turno_manha_CG <- -1
+         turno_manha_Ped <- -1
+         turno_manha_Cir <- -1
 
-      se (button = "s") ou (button = "S") entao
          Escreval()
-         Escreval("Dados da manh√£ confirmados.")
+         Escreval("Digite novamente os dados")
          Escreval()
-
+      Sen„o
+         Se (button <> "s") E (button <> "S") Ent„o
+            turno_manha_CG <- -1
+            turno_manha_Ped <- -1
+            turno_manha_Cir <- -1
+            Escreval("OpÁ„o inv·lida! Digite novamente os dados")
+            Escreval()
+         Fimse
       Fimse
-
-   FimEnquanto
-
+   Fimenquanto
+   escreval("Dados da manh„ confirmados.")
 
 Fimalgoritmo
-
-
-
- 
-

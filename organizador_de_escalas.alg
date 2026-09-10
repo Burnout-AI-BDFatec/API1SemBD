@@ -1,4 +1,4 @@
-Algoritmo "Escala_Medicos_V2"
+Algoritmo "Escala_Medicos"
 
 Var
    turno_manha_CG, turno_manha_Ped, turno_manha_Cir : real
@@ -23,7 +23,7 @@ Inicio
          Senão
             Se (turno_manha_CG>140) Então
                Escreval()
-               Escreval(" Número inválido! Quantidade de médicos maior que o máximo permitido")
+               Escreval(" Número inválido! Quantidade de médicos maior que a quantidade maxima permitida")
                Escreval()
             Senão
                Se(result_turno_manha_CG>0)Então
@@ -38,14 +38,12 @@ Inicio
       Escreval()
       Escreval("Digite o número de Pediatras do turno da manhã: ")
       Leia(turno_manha_Ped)
-           //repetir condicoes logicas acima
-      
+                 // repetir a logica do codigo acima
       
       Escreval()
       Escreval("Digite o número de Cirurgiões do turno da manhã: ")
       Leia(turno_manha_Cir)
-          //repetir codicoes logicas acima
-
+                // repetir a logica do codigo acima
 
       Escreval()
       Escreval("Confirme os dados do turno da manhã:")
@@ -75,6 +73,7 @@ Inicio
             Escreval()
          Fimse
       Fimse
+
    Fimenquanto
    escreval("Dados da manhã confirmados.")
 

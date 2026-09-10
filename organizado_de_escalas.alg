@@ -28,7 +28,7 @@ Inicio
 
       Enquanto (turno_manha_CG < 1) OU (turno_manha_CG > 150) OU (result_turno_manha_CG > 0) Faca
 
-         Escreval("Digite o nÃºmero de ClÃ­nicos Gerais do turno da manhÃ£: ")
+         Escreval("Digite o número de Clínicos Gerais do turno da manhã: ")
          Leia(turno_manha_CG)
 
          result_turno_manha_CG <- turno_manha_CG - Int(turno_manha_CG)
